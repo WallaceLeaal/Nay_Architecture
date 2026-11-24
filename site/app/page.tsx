@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import HeaderNavigation from "./header-navigation";
 import { projectPreviews } from "./projects";
 
@@ -101,6 +102,7 @@ export default function Home() {
               </figure>
             ))}
           </div>
+          <Link className="portfolio-link" href="/portfolio" prefetch={false}>Ver portfólio</Link>
         </section>
 
         <section className="contact" id="contato" tabIndex={-1} aria-labelledby="contato-title">

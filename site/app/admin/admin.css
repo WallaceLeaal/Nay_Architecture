@@ -1,0 +1,38 @@
+.panel { max-width: 65rem; padding-bottom: 4rem; }
+.panel h1 { font-size: clamp(2.25rem, 6vw, 4rem); }
+.panel h2 { font-size: clamp(1.6rem, 3vw, 2.25rem); }
+.panel-bar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .75rem 1.25rem; padding-block: 1.25rem; }
+.panel > .panel-bar:first-child { border-bottom: 1px solid var(--line); margin-bottom: 1rem; }
+.panel-card { padding: clamp(1.125rem, 4vw, 2rem); border: 1px solid var(--line); margin-block: 1rem; }
+.panel-login { max-width: 28rem; margin: 2rem auto; }
+.admin-form fieldset { min-width: 0; margin: 0; border: 0; padding: 0; }
+.admin-form { margin-top: 1rem; }
+.admin-form fieldset { display: grid; gap: 1rem; }
+.admin-form label { display: grid; gap: .25rem; font-weight: 600; }
+.admin-form small, .admin-form p { color: var(--muted); font-weight: 400; }
+.admin-form input:not([type="checkbox"]), .admin-form select, .admin-form textarea {
+  width: 100%;
+  min-width: 0;
+  padding: .65rem .75rem;
+  border: 1px solid var(--line);
+  background: #fffdf9;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 400;
+}
+.admin-form textarea { resize: vertical; }
+.admin-form .form-error { color: #891b24; margin-top: .5rem; }
+.admin-form [role="status"] { margin-top: .5rem; }
+.panel-button { background: var(--wine); color: white; border: 1px solid var(--wine); cursor: pointer; font-family: inherit; justify-self: start; }
+.panel-button:disabled { opacity: .65; cursor: wait; }
+.panel-link { padding: .45rem .1rem; color: inherit; font: inherit; text-decoration: underline; background: none; border: 0; cursor: pointer; }
+.panel-grid, .panel-photos { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); }
+.panel-photos { margin-top: 1rem; }
+.panel-photos article { display: grid; gap: .55rem; padding: .75rem; border: 1px solid var(--line); min-width: 0; }
+.panel-photos img { aspect-ratio: 3 / 2; object-fit: cover; }
+.admin-form .panel-checkbox { display: flex; gap: .5rem; align-items: center; min-height: 2.75rem; }
+.panel-list { list-style: none; padding: 0; border-top: 1px solid var(--line); }
+.panel-list li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1rem; padding: 1rem 0; border-bottom: 1px solid var(--line); }
+.panel-list a { overflow-wrap: anywhere; }
+.panel-list span, .panel-empty { color: var(--muted); }
+.panel-empty { margin-top: 1rem; }

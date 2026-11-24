@@ -10,6 +10,18 @@
   --sans: system-ui, sans-serif;
 }
 
+.portfolio-link { display: inline-block; margin-top: 1.25rem; }
+.portfolio-page { min-height: 60vh; padding-block: clamp(2rem, 6vw, 5rem); }
+.portfolio-page h1, .portfolio-detail h1 { font-size: clamp(2.75rem, 8vw, 6rem); overflow-wrap: anywhere; }
+.portfolio-grid, .portfolio-empty { margin-top: 1.75rem; }
+.portfolio-card { display: grid; gap: .35rem; align-content: start; text-decoration: none; overflow-wrap: anywhere; }
+.portfolio-card:hover h2 { text-decoration: underline; }
+.portfolio-card h2 { font-size: clamp(1.6rem, 3vw, 2.3rem); }
+.portfolio-detail { display: grid; gap: 1.5rem; margin-top: 2rem; }
+.portfolio-cover { max-height: 75vh; object-fit: contain; object-position: left; }
+.portfolio-description { max-width: 65ch; white-space: pre-wrap; overflow-wrap: anywhere; }
+.portfolio-gallery { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); align-items: start; }
+
 *, *::before, *::after { box-sizing: border-box; }
 body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.65 var(--sans); }
 h1, h2, h3, p, figure, blockquote, dl, dd { margin: 0; }
