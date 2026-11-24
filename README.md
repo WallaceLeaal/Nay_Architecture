@@ -2,6 +2,8 @@
 
 Site de apresentação da arquiteta Nayara Leal. A página reúne os serviços de arquitetura, apresenta as etapas de desenvolvimento de um projeto e mostra uma prévia do portfólio. O contato para solicitar um orçamento é feito pelo Instagram [@arquitetanayaraleal](https://www.instagram.com/arquitetanayaraleal/).
 
+O aplicativo Next.js fica em `site/`, que é a raiz da aplicação. A partir dessa pasta, instale as dependências, inicie o servidor e execute o build e os comandos do banco.
+
 ## Como rodar localmente
 
 Com Node.js e npm instalados, abra o PowerShell na raiz do repositório e execute os comandos abaixo.
@@ -16,11 +18,11 @@ Abra [http://localhost:3000](http://localhost:3000) no navegador.
 
 ## Estrutura do site
 
-A aplicação fica em `site/` e usa Next.js, React, TypeScript e CSS.
-
 - `site/app/page.tsx` contém as seções da página inicial.
 - `site/app/globals.css` reúne os estilos do site.
-- `site/app/projects.ts` define os projetos exibidos no portfólio.
+- `site/app/projects.ts` contém a prévia provisória exibida na home.
+- `site/app/portfolio/` exibe os projetos publicados e `site/app/admin/` contém o painel privado.
+- `site/db/` contém a configuração do MySQL e as migrações.
 - `site/public/images/` guarda as imagens usadas na página.
 
 ## Comandos do projeto
